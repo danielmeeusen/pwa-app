@@ -1,3 +1,10 @@
+# PWA Notes App
+Quick Javascript App to practice building a Progressive Web App.
+
+Built With:
+
+
+
 ## Manifest.json
 
 **name** : text that is displayed on splash screen when app is opened
