@@ -3,7 +3,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
     <title>PWA Notes</title>
+
     <!-- materialize icons, css & js -->
     <link type="text/css" href="/css/materialize.min.css" rel="stylesheet" />
     <link
@@ -35,9 +37,11 @@
 
     <!-- side nav -->
     <ul id="side-menu" class="sidenav side-menu">
-      <li><a class="subheader">FOODNINJA</a></li>
+      <li><a class="subheader">PWANotes</a></li>
       <li><a href="/" class="waves-effect">Home</a></li>
       <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+      <li><a href="/pages/about.html" class="waves-effect">Signup</a></li>
+
       <li><div class="divider"></div></li>
       <li>
         <a href="/pages/contact.html" class="waves-effect">
@@ -46,9 +50,9 @@
       </li>
     </ul>
 
-    <!-- recipes -->
+    <!-- Notes  -->
     <div class="recipes container grey-text text-darken-1">
-      <h6 class="center">Recipes</h6>
+      <h6 class="center">Notes</h6>
     </div>
 
     <div class="center">
@@ -89,12 +93,12 @@
       </form>
     </div>
 
-    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-    <script src="/__/firebase/7.7.0/firebase-app.js"></script>
-
-    <!-- Add Firebase products that you want to use -->
-    <script src="/__/firebase/7.7.0/firebase-auth.js"></script>
-    <script src="/__/firebase/7.7.0/firebase-firestore.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-functions.js"></script>
+    >
 
     <script>
       // Your web app's Firebase configuration
@@ -111,6 +115,7 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       const db = firebase.firestore();
+      const functions = firebase.functions();
     </script>
 
     <script src="/js/app.js"></script>
